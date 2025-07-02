@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vehicle Gate Pass Dashboard</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/dashboard.css" />
+    <link rel="stylesheet" href="css/sidebar.css" />
+    <link rel="stylesheet" href="css/global.css" />
+  </head>
+  <body>
+    <aside class="sidebar">
+      <div>
+        <div class="logo-title">
+          <img src="logo.png" alt="Logo" class="site-logo" />
+          <h2 class="sidebar-title login-title">
+            <span class="highlight-yellow">ISATU</span>
+            <span class="highlight-blue">Vehicle Gate Pass</span>
+          </h2>
+        </div>
+        <div class="nav-links">
+          <a href="dashboard.html" class="active">
+            <span class="sidebar-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-blocks-icon lucide-blocks"
+              >
+                <path
+                  d="M10 22V7a1 1 0 0 0-1-1H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-5a1 1 0 0 0-1-1H2"
+                />
+                <rect x="14" y="2" width="8" height="8" rx="1" />
+              </svg>
+            </span>
+            Dashboard
+          </a>
+          <a href="vehicles.html">
+            <span class="sidebar-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-car-icon lucide-car"
+              >
+                <path
+                  d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2"
+                />
+                <circle cx="7" cy="17" r="2" />
+                <path d="M9 17h6" />
+                <circle cx="17" cy="17" r="2" />
+              </svg>
+            </span>
+            Vehicles
+          </a>
+          <a href="entry-exit.html">
+            <span class="sidebar-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-car-front-icon lucide-car-front"
+              >
+                <path
+                  d="m21 8-2 2-1.5-3.7A2 2 0 0 0 15.646 5H8.4a2 2 0 0 0-1.903 1.257L5 10 3 8"
+                />
+                <path d="M7 14h.01" />
+                <path d="M17 14h.01" />
+                <rect width="18" height="8" x="3" y="10" rx="2" />
+                <path d="M5 18v2" />
+                <path d="M19 18v2" />
+              </svg>
+            </span>
+            Entry/Exit Logs
+          </a>
+          <a href="users.html">
+            <span class="sidebar-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-users-icon lucide-users"
+              >
+                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                <path d="M16 3.128a4 4 0 0 1 0 7.744" />
+                <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+                <circle cx="9" cy="7" r="4" />
+              </svg>
+            </span>
+            Users
+          </a>
+          <a href="access_logs.html">
+            <span class="sidebar-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-clock3-icon lucide-clock-3"
+              >
+                <circle cx="12" cy="12" r="10" />
+                <polyline points="12 6 12 12 16.5 12" />
+              </svg>
+            </span>
+            Access Logs
+          </a>
+          <a href="reports.html">
+            <span class="sidebar-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-notebook-text-icon lucide-notebook-text"
+              >
+                <path d="M2 6h4" />
+                <path d="M2 10h4" />
+                <path d="M2 14h4" />
+                <path d="M2 18h4" />
+                <rect width="16" height="20" x="4" y="2" rx="2" />
+                <path d="M9.5 8h5" />
+                <path d="M9.5 12H16" />
+                <path d="M9.5 16H14" />
+              </svg>
+            </span>
+            Reports
+          </a>
+
+          <a href="registration_applications.html">
+            <span class="sidebar-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-notepad-text-icon lucide-notepad-text"
+              >
+                <path d="M8 2v4" />
+                <path d="M12 2v4" />
+                <path d="M16 2v4" />
+                <rect width="16" height="18" x="4" y="4" rx="2" />
+                <path d="M8 10h6" />
+                <path d="M8 14h8" />
+                <path d="M8 18h5" />
+              </svg>
+            </span>
+            Registration Applications
+          </a>
+          <a href="#">
+            <span class="sidebar-icon"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-id-card-icon lucide-id-card"
+              >
+                <path d="M16 10h2" />
+                <path d="M16 14h2" />
+                <path d="M6.17 15a3 3 0 0 1 5.66 0" />
+                <circle cx="9" cy="11" r="2" />
+                <rect x="2" y="5" width="20" height="14" rx="2" /></svg
+            ></span>
+            RFID Management
+          </a>
+          <a href="#">
+            <span class="sidebar-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-settings-icon lucide-settings"
+              >
+                <path
+                  d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"
+                />
+                <circle cx="12" cy="12" r="3" />
+              </svg>
+            </span>
+            Settings
+          </a>
+        </div>
+      </div>
+      <a href="#" class="logout"
+        ><span class="sidebar-icon"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-log-out-icon lucide-log-out"
+          >
+            <path d="m16 17 5-5-5-5" />
+            <path d="M21 12H9" />
+            <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4" /></svg></span
+        >Logout</a
+      >
+    </aside>
+
+    <main class="main">
+      <h2>Dashboard</h2>
+
+      <div class="stats">
+        <div class="card-flex">
+          <div style="width: 100%">
+            Campus Occupancy <br />
+            <strong class="card-num-occ">43 / 300</strong>
+            <div class="occupancy-progress-bar">
+              <div class="occupancy-progress" style="width: 14.3%"></div>
+            </div>
+            <div class="occupancy-status available">Parking Available</div>
+          </div>
+          <span class="card-svg">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-car-front-icon lucide-car-front"
+            >
+              <path
+                d="m21 8-2 2-1.5-3.7A2 2 0 0 0 15.646 5H8.4a2 2 0 0 0-1.903 1.257L5 10 3 8"
+              />
+              <path d="M7 14h.01" />
+              <path d="M17 14h.01" />
+              <rect width="18" height="8" x="3" y="10" rx="2" />
+              <path d="M5 18v2" />
+              <path d="M19 18v2" />
+            </svg>
+          </span>
+        </div>
+        <div class="card-flex">
+          <div>
+            Today's Entries <br />
+            <strong class="card-num">43</strong>
+          </div>
+          <span class="card-svg">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-car-icon lucide-car"
+            >
+              <path
+                d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2"
+              />
+              <circle cx="7" cy="17" r="2" />
+              <path d="M9 17h6" />
+              <circle cx="17" cy="17" r="2" />
+            </svg>
+          </span>
+        </div>
+        <div class="card-flex">
+          <div>
+            Registered Vehicles <br />
+            <strong class="card-num">120</strong>
+          </div>
+          <span class="card-svg" id="car-icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-car-icon lucide-car"
+            >
+              <path
+                d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2"
+              />
+              <circle cx="7" cy="17" r="2" />
+              <path d="M9 17h6" />
+              <circle cx="17" cy="17" r="2" />
+            </svg>
+          </span>
+        </div>
+        <div class="card-flex">
+          <div>
+            Visitors <br />
+            <strong class="card-num">5</strong>
+          </div>
+          <span class="card-svg">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-users-icon lucide-users"
+            >
+              <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+              <path d="M16 3.128a4 4 0 0 1 0 7.744" />
+              <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+              <circle cx="9" cy="7" r="4" />
+            </svg>
+          </span>
+        </div>
+      </div>
+      <div class="grid">
+        <div class="grid-top">
+          <div class="card" id="gate-traffic">
+            <div
+              style="
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+              "
+            >
+              <strong>Gate Traffic Analysis</strong>
+              <div class="traffic-btn-group">
+                <div class="traffic-btn-box">
+                  <div class="traffic-btn-slider"></div>
+                  <button class="traffic-btn active">Day</button>
+                  <button class="traffic-btn">Week</button>
+                  <button class="traffic-btn">Month</button>
+                </div>
+              </div>
+            </div>
+            <p>Entry and exit patterns over time</p>
+            <div class="bar">[Bar Graph Placeholder]</div>
+          </div>
+          <div class="card" id="recent-activity">
+            <strong>Recent Activity</strong>
+
+            <a class="view-btn" href="#">View All Logs</a>
+          </div>
+        </div>
+        <div class="grid-bottom">
+          <div class="card" id="vehicle-types">
+            <strong>Vehicle Types</strong>
+            <p>Distribution of registered vehicles</p>
+            <div class="donut">[Donut Chart Placeholder]</div>
+          </div>
+          <div class="card" id="daily-visitor-trend">
+            <strong>Daily Visitor Trend</strong>
+            <p>Visitor traffic over the past week</p>
+            <div class="line">[Line Graph Placeholder]</div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="js/dashboard.js"></script>
+  </body>
+</html>
